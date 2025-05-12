@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{922F0469-3DF3-4608-9090-73E213F06F6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BMS.My.MyApplication</StartupObject>
+    <RootNamespace>BMS</RootNamespace>
+    <AssemblyName>BMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\CustomerManagementForm.Designer.vb">
+      <DependentUpon>CustomerManagementForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CustomerManagementForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\dashbord.Designer.vb">
+      <DependentUpon>dashbord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\dashbord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ReportA.Designer.vb">
+      <DependentUpon>ReportA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReportA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BMSDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\CashierD.Designer.vb">
+      <DependentUpon>CashierD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\CashierD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\TransactionC.Designer.vb">
+      <DependentUpon>TransactionC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier\TransactionC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Emplyoee.Designer.vb">
+      <DependentUpon>Emplyoee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Emplyoee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Loan.Designer.vb">
+      <DependentUpon>Loan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Loan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ManagerD.Designer.vb">
+      <DependentUpon>ManagerD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ReportM.Designer.vb">
+      <DependentUpon>ReportM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ReportM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Admin\Transaction.Designer.vb">
+      <DependentUpon>Transaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\CustomerManagementForm.resx">
+      <DependentUpon>CustomerManagementForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\dashbord.resx">
+      <DependentUpon>dashbord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ReportA.resx">
+      <DependentUpon>ReportA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\CashierD.resx">
+      <DependentUpon>CashierD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\TransactionC.resx">
+      <DependentUpon>TransactionC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Emplyoee.resx">
+      <DependentUpon>Emplyoee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Loan.resx">
+      <DependentUpon>Loan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ManagerD.resx">
+      <DependentUpon>ManagerD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ReportM.resx">
+      <DependentUpon>ReportM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Transaction.resx">
+      <DependentUpon>Transaction.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="BMSDataSet.xsc">
+      <DependentUpon>BMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSDataSet.xss">
+      <DependentUpon>BMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BMSDataSet1.xsc">
+      <DependentUpon>BMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BMSDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BMSDataSet1.xss">
+      <DependentUpon>BMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\login %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\WhatsApp Image 2025-01-05 at 19.13.57_9b72e984 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\WhatsApp Image 2025-01-05 at 19.13.56_92a5f1ae %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\WhatsApp Image 2025-01-05 at 19.13.53_02110c57 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BMS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BMS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>BMS.mdf</DependentUpon>
+    </Content>
+    <None Include="Resource\WhatsApp Image 2025-01-05 at 19.14.00_397d0a77 %283%29.jpg" />
+    <None Include="Resource\images %281%29.jpeg" />
+    <None Include="Resource\images.jpeg" />
+    <None Include="Resource\WhatsApp Image 2025-01-05 at 19.13.58_5ed5afe1 %282%29.jpg" />
+    <None Include="Resource\WhatsApp Image 2025-01-05 at 19.14.00_397d0a77 %282%29.jpg" />
+    <None Include="Resource\WhatsApp Image 2025-01-05 at 19.14.00_397d0a77.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
